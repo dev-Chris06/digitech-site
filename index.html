@@ -22,6 +22,7 @@
       name="description"
       content="DIGITECH, agence spécialisée dans la digitalisation des entreprises."
     />
+    <link rel="canonical" href="https://digitechagence.netlify.app/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,6 +44,7 @@
             <li><a href="#services" class="nav__link">Services</a></li>
             <li><a href="#methode" class="nav__link">Méthode</a></li>
             <li><a href="#realisations" class="nav__link">Réalisations</a></li>
+            <li><a href="equipe.html" class="nav__link">Équipe</a></li>
             <li><a href="#avis" class="nav__link">Avis</a></li>
             <li><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
@@ -50,6 +52,7 @@
         <a href="#contact" class="btn btn--green header__cta" id="header-cta"
           >Demander un devis</a
         >
+        <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
         <button
           class="hamburger"
           id="hamburger"
@@ -64,12 +67,16 @@
           <li><a href="#services" class="nav__link">Services</a></li>
           <li><a href="#methode" class="nav__link">Méthode</a></li>
           <li><a href="#realisations" class="nav__link">Réalisations</a></li>
+          <li><a href="equipe.html" class="nav__link">Équipe</a></li>
           <li><a href="#avis" class="nav__link">Avis</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
           <li>
             <a href="#contact" class="btn btn--green mobile-menu__cta"
               >Demander un devis</a
             >
+          </li>
+          <li>
+            <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
           </li>
         </ul>
       </div>
@@ -126,21 +133,13 @@
             </div>
             <div class="hero__stats">
               <div class="hero__stat">
-                <span class="stat__number" data-target="120">0</span
-                ><span class="stat__plus">+</span>
-                <span class="stat__label">Entreprises accompagnées</span>
+                <span class="stat__number">Premiers</span>
+                <span class="stat__label">projets en cours</span>
               </div>
               <div class="hero__stat-divider"></div>
               <div class="hero__stat">
-                <span class="stat__number" data-target="98">0</span
-                ><span class="stat__percent">%</span>
-                <span class="stat__label">Taux de satisfaction</span>
-              </div>
-              <div class="hero__stat-divider"></div>
-              <div class="hero__stat">
-                <span class="stat__number" data-target="8">0</span
-                ><span class="stat__plus">+</span>
-                <span class="stat__label">Années d'expérience</span>
+                <span class="stat__number">3</span>
+                <span class="stat__label">filières techniques</span>
               </div>
             </div>
           </div>
@@ -149,7 +148,6 @@
             <div class="growth-card">
               <div class="growth-card__header">
                 <span class="growth-card__title">Croissance digitale</span>
-                <span class="growth-card__badge">+47%</span>
               </div>
               <div class="growth-card__chart">
                 <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
@@ -218,12 +216,12 @@
               </div>
               <div class="growth-card__footer">
                 <div class="growth-metric">
-                  <span class="growth-metric__val">120+</span
-                  ><span class="growth-metric__lab">Projets livrés</span>
+                  <span class="growth-metric__val">Premiers</span
+                  ><span class="growth-metric__lab">projets en cours</span>
                 </div>
                 <div class="growth-metric">
-                  <span class="growth-metric__val">15</span
-                  ><span class="growth-metric__lab">Secteurs</span>
+                  <span class="growth-metric__val">Expertises</span
+                  ><span class="growth-metric__lab">complémentaires</span>
                 </div>
                 <div class="growth-metric">
                   <span class="growth-metric__val">24/7</span
@@ -258,7 +256,7 @@
                   points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
                 />
               </svg>
-              98% Satisfaction
+              Accompagnement personnalisé
             </div>
           </div>
         </div>
@@ -268,18 +266,18 @@
       <section class="trust-banner" aria-label="Chiffres clés">
         <div class="container trust-banner__inner">
           <div class="trust-stat fade-in">
-            <span class="trust-stat__number">120+</span
-            ><span class="trust-stat__label">Projets réalisés</span>
+            <span class="trust-stat__number">Premiers</span
+            ><span class="trust-stat__label">projets en cours</span>
           </div>
           <div class="trust-divider"></div>
           <div class="trust-stat fade-in">
-            <span class="trust-stat__number">15</span
-            ><span class="trust-stat__label">Secteurs d'activité</span>
+            <span class="trust-stat__number">3</span
+            ><span class="trust-stat__label">expertises complémentaires</span>
           </div>
           <div class="trust-divider"></div>
           <div class="trust-stat fade-in">
-            <span class="trust-stat__number">98%</span
-            ><span class="trust-stat__label">Clients satisfaits</span>
+            <span class="trust-stat__number">100%</span
+            ><span class="trust-stat__label">Engagement client</span>
           </div>
           <div class="trust-divider"></div>
           <div class="trust-stat fade-in">
@@ -305,7 +303,7 @@
               <div class="service-card__icon">
                 <img
                   src="images/service-site-web.png"
-                  alt="Création de sites web"
+                  alt=""
                 />
               </div>
               <h3 class="service-card__title">Création de sites web</h3>
@@ -313,13 +311,18 @@
                 Sites vitrines, e-commerce et portails sur mesure, rapides,
                 accessibles et optimisés pour le SEO.
               </p>
+              <ul class="service-card__deliverables">
+                <li>✓ Site vitrine ou e-commerce</li>
+                <li>✓ Design responsive (mobile/desktop)</li>
+                <li>✓ Optimisation SEO de base</li>
+              </ul>
               <a href="#contact" class="service-card__link">En savoir plus →</a>
             </article>
             <article class="service-card fade-in">
               <div class="service-card__icon service-card__icon--green">
                 <img
                   src="images/service-application.png"
-                  alt="Applications sur mesure"
+                  alt=""
                 />
               </div>
               <h3 class="service-card__title">Applications sur mesure</h3>
@@ -327,13 +330,18 @@
                 Développement d'applications web et mobiles adaptées à vos
                 processus métier et à vos utilisateurs.
               </p>
+              <ul class="service-card__deliverables">
+                <li>✓ Application web ou mobile</li>
+                <li>✓ Intégration à vos outils existants</li>
+                <li>✓ Tests et maintenance</li>
+              </ul>
               <a href="#contact" class="service-card__link">En savoir plus →</a>
             </article>
             <article class="service-card fade-in">
               <div class="service-card__icon service-card__icon--lavender">
                 <img
                   src="images/service-marketing.png"
-                  alt="Marketing digital & SEO"
+                  alt=""
                 />
               </div>
               <h3 class="service-card__title">Marketing digital & SEO</h3>
@@ -341,13 +349,18 @@
                 Stratégie digitale, référencement naturel, campagnes
                 publicitaires et gestion des réseaux sociaux.
               </p>
+              <ul class="service-card__deliverables">
+                <li>✓ Audit SEO</li>
+                <li>✓ Gestion des réseaux sociaux</li>
+                <li>✓ Campagnes publicitaires ciblées</li>
+              </ul>
               <a href="#contact" class="service-card__link">En savoir plus →</a>
             </article>
             <article class="service-card fade-in">
               <div class="service-card__icon service-card__icon--green">
                 <img
                   src="images/service-automatisation.png"
-                  alt="Automatisation"
+                  alt=""
                 />
               </div>
               <h3 class="service-card__title">Automatisation</h3>
@@ -355,13 +368,18 @@
                 Automatisation des tâches répétitives, intégrations API,
                 workflows intelligents et gains de productivité mesurables.
               </p>
+              <ul class="service-card__deliverables">
+                <li>✓ Automatisation de tâches répétitives</li>
+                <li>✓ Intégration d'API</li>
+                <li>✓ Reporting de gains de productivité</li>
+              </ul>
               <a href="#contact" class="service-card__link">En savoir plus →</a>
             </article>
             <article class="service-card fade-in">
               <div class="service-card__icon">
                 <img
                   src="images/service-identite.png"
-                  alt="Identité de marque"
+                  alt=""
                 />
               </div>
               <h3 class="service-card__title">Identité de marque</h3>
@@ -369,17 +387,30 @@
                 Logo, charte graphique, brandbook et supports visuels pour une
                 image cohérente et mémorable.
               </p>
+              <ul class="service-card__deliverables">
+                <li>✓ Logo et charte graphique</li>
+                <li>✓ Brandbook</li>
+                <li>✓ Supports visuels (cartes, flyers...)</li>
+              </ul>
               <a href="#contact" class="service-card__link">En savoir plus →</a>
             </article>
             <article class="service-card fade-in">
               <div class="service-card__icon service-card__icon--lavender">
-                <img src="images/service-formation.png" alt="Formation" />
+                <img
+                  src="images/service-formation.png"
+                  alt=""
+                />
               </div>
               <h3 class="service-card__title">Formation</h3>
               <p class="service-card__desc">
                 Formations personnalisées pour maîtriser les outils digitaux,
                 les CMS, la productivité et l'IA appliquée.
               </p>
+              <ul class="service-card__deliverables">
+                <li>✓ Formation aux outils digitaux</li>
+                <li>✓ Prise en main de CMS</li>
+                <li>✓ Initiation à l'IA appliquée</li>
+              </ul>
               <a href="#contact" class="service-card__link">En savoir plus →</a>
             </article>
           </div>
@@ -467,60 +498,32 @@
               engagement qualité.
             </p>
           </div>
-          <div class="portfolio__grid">
+          <div class="portfolio__grid portfolio__grid--featured">
             <article class="portfolio-card fade-in">
-              <div class="portfolio-card__visual portfolio-card__visual--1">
-                <img
-                  src="images/realisation-ecommerce.png"
-                  alt="Refonte site e-commerce"
-                />
-              </div>
-              <div class="portfolio-card__info">
-                <span class="portfolio-card__tag">Web</span>
-                <h3 class="portfolio-card__title">Refonte site e-commerce</h3>
-                <p class="portfolio-card__desc">
-                  Refonte complète d'une boutique en ligne avec +65% de taux de
-                  conversion.
-                </p>
-              </div>
-            </article>
-            <article class="portfolio-card fade-in">
-              <div class="portfolio-card__visual portfolio-card__visual--2">
-                <img
-                  src="images/realisation-rh.png"
-                  alt="Application de gestion RH"
-                />
-              </div>
-              <div class="portfolio-card__info">
-                <span class="portfolio-card__tag portfolio-card__tag--app"
-                  >App</span
-                >
-                <h3 class="portfolio-card__title">Application de gestion RH</h3>
-                <p class="portfolio-card__desc">
-                  Solution SaaS sur mesure pour 200 utilisateurs, gain de 30% de
-                  productivité.
-                </p>
-              </div>
-            </article>
-            <article class="portfolio-card fade-in">
-              <div class="portfolio-card__visual portfolio-card__visual--3">
-                <img
-                  src="images/realisation-identite-visuelle.png"
-                  alt="Identité visuelle complète"
-                />
-              </div>
-              <div class="portfolio-card__info">
-                <span class="portfolio-card__tag portfolio-card__tag--branding"
-                  >Branding</span
-                >
-                <h3 class="portfolio-card__title">
-                  Identité visuelle complète
-                </h3>
-                <p class="portfolio-card__desc">
-                  Logo, charte graphique et brandbook pour une startup fintech
-                  en pleine expansion.
-                </p>
-              </div>
+              <a
+                href="https://digitechagence.netlify.app/"
+                class="portfolio-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="portfolio-card__visual portfolio-card__visual--1">
+                  <img
+                    src="images/capture-digitech.png"
+                    alt="Capture d'écran de la page d'accueil DIGITECH"
+                  />
+                </div>
+                <div class="portfolio-card__info">
+                  <span class="portfolio-card__tag">Web</span>
+                  <h3 class="portfolio-card__title">
+                    Le site que vous consultez
+                  </h3>
+                  <p class="portfolio-card__desc">
+                    Site vitrine responsive réalisé pour DIGITECH, avec
+                    formulaire de contact fonctionnel, traduction FR/EN,
+                    optimisation SEO de base et déploiement sur Netlify.
+                  </p>
+                </div>
+              </a>
             </article>
           </div>
         </div>
@@ -540,10 +543,9 @@
             <article class="testimonial-card fade-in">
               <div class="testimonial-card__stars">★★★★★</div>
               <blockquote class="testimonial-card__quote">
-                "DIGITECH a transformé notre présence en ligne en seulement 6
-                semaines. Notre chiffre d'affaires en ligne a augmenté de 85%
-                dès le premier trimestre. Une équipe réactive et vraiment à
-                l'écoute."
+                "DIGITECH nous a accompagnés dans la refonte de notre image
+                digitale. Leur approche méthodique et leur réactivité ont été
+                des atouts majeurs pour notre projet."
               </blockquote>
               <div class="testimonial-card__author">
                 <div class="testimonial-card__avatar">SC</div>
@@ -560,9 +562,9 @@
             <article class="testimonial-card fade-in">
               <div class="testimonial-card__stars">★★★★★</div>
               <blockquote class="testimonial-card__quote">
-                "L'application sur mesure développée par DIGITECH a révolutionné
-                notre gestion interne. Les délais ont été respectés, la qualité
-                est au rendez-vous. Je recommande vivement."
+                "L'équipe de DIGITECH a su comprendre nos besoins et proposer
+                une solution technique adaptée. Leur professionnalisme nous a
+                convaincus."
               </blockquote>
               <div class="testimonial-card__author">
                 <div
@@ -581,9 +583,9 @@
             <article class="testimonial-card fade-in">
               <div class="testimonial-card__stars">★★★★★</div>
               <blockquote class="testimonial-card__quote">
-                "Notre stratégie SEO et marketing digital a été entièrement
-                repensée par DIGITECH. Résultat : +200% de trafic organique en 4
-                mois. Un partenaire de confiance pour le long terme."
+                "Grâce à DIGITECH, nous avons clarifié notre stratégie de
+                communication digitale. Leur expertise en marketing et leur
+                créativité ont été précieuses."
               </blockquote>
               <div class="testimonial-card__author">
                 <div
@@ -1018,6 +1020,7 @@
       </svg>
     </a>
 
+    <script src="i18n.js" defer></script>
     <script src="main.js" defer></script>
   </body>
 </html>

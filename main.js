@@ -87,19 +87,28 @@
 
   if (counterEls.length > 0) {
     var statsBox = counterEls[0].closest(".hero__stats");
+    function startCounters() {
+      if (countersStarted) return;
+      countersStarted = true;
+      counterEls.forEach(function (el) {
+        animateCounter(el, parseInt(el.dataset.target, 10));
+      });
+    }
+
     if (statsBox) {
+      // Lancement immédiat si déjà visible au chargement
+      var rect = statsBox.getBoundingClientRect();
+      var viewportH =
+        window.innerHeight || document.documentElement.clientHeight;
+      if (rect.top < viewportH && rect.bottom > 0) startCounters();
+
       new IntersectionObserver(
         function (entries) {
           entries.forEach(function (entry) {
-            if (entry.isIntersecting && !countersStarted) {
-              countersStarted = true;
-              counterEls.forEach(function (el) {
-                animateCounter(el, parseInt(el.dataset.target, 10));
-              });
-            }
+            if (entry.isIntersecting) startCounters();
           });
         },
-        { threshold: 0.5 },
+        { threshold: 0.1 },
       ).observe(statsBox);
     }
   }
@@ -130,10 +139,32 @@
     var status = document.getElementById("form-status");
     var submitBtn = document.getElementById("form-submit");
     var btnText = document.getElementById("btn-text");
-    var labels = {
-      prenom: "Le prénom est requis.",
-      nom: "Le nom est requis.",
-      message: "Le message est requis.",
+    var isSubmitting = false;
+
+    function t(key) {
+      if (window.DigitechI18n && window.DigitechI18n.t) {
+        return window.DigitechI18n.t(key);
+      }
+      var fallback = {
+        "form.requiredFirst": "Le prénom est requis.",
+        "form.requiredLast": "Le nom est requis.",
+        "form.requiredMessage": "Le message est requis.",
+        "form.requiredDefault": "Ce champ est requis.",
+        "form.invalidEmail": "Veuillez entrer un email valide.",
+        "form.submit": "Envoyer ma demande",
+        "form.sending": "Envoi...",
+        "form.success":
+          "Message envoyé avec succès, nous vous répondrons rapidement.",
+        "form.error":
+          "Une erreur est survenue pendant l’envoi. Veuillez réessayer ou nous écrire directement par email.",
+      };
+      return fallback[key] || "";
+    }
+
+    var errorKeys = {
+      prenom: "form.requiredFirst",
+      nom: "form.requiredLast",
+      message: "form.requiredMessage",
     };
 
     function showError(input, msg) {
@@ -149,11 +180,11 @@
     function validateInput(input) {
       if (input.type === "email") {
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim())) {
-          showError(input, "Veuillez entrer un email valide.");
+          showError(input, t("form.invalidEmail"));
           return false;
         }
       } else if (!input.value.trim()) {
-        showError(input, labels[input.name] || "Ce champ est requis.");
+        showError(input, t(errorKeys[input.name] || "form.requiredDefault"));
         return false;
       }
       clearError(input);
@@ -168,8 +199,15 @@
     function setSubmitting(isSubmitting) {
       if (!submitBtn || !btnText) return;
       submitBtn.disabled = isSubmitting;
-      btnText.textContent = isSubmitting ? "Envoi..." : "Envoyer ma demande";
+      btnText.textContent = isSubmitting ? t("form.sending") : t("form.submit");
     }
+
+    window.addEventListener("digitech:languagechange", function () {
+      setSubmitting(isSubmitting);
+      required.forEach(function (input) {
+        if (input.classList.contains("error")) validateInput(input);
+      });
+    });
 
     required.forEach(function (input) {
       input.addEventListener("blur", function () {
@@ -193,6 +231,7 @@
         return;
       }
 
+      isSubmitting = true;
       setSubmitting(true);
 
       fetch(form.action, {
@@ -203,18 +242,13 @@
         .then(function (response) {
           if (!response.ok) throw new Error("formspree-error");
           form.reset();
-          setStatus(
-            "Message envoyé avec succès, nous vous répondrons rapidement.",
-            "success",
-          );
+          setStatus(t("form.success"), "success");
         })
         .catch(function () {
-          setStatus(
-            "Une erreur est survenue pendant l’envoi. Veuillez réessayer ou nous écrire directement par email.",
-            "error",
-          );
+          setStatus(t("form.error"), "error");
         })
         .finally(function () {
+          isSubmitting = false;
           setSubmitting(false);
         });
     });
