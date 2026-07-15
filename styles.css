@@ -33,17 +33,11 @@ html {
 #services,
 #methode,
 #realisations,
-#avis,
 #contact {
   scroll-margin-top: var(--header-h);
 }
 body {
-  font-family:
-    "Inter",
-    system-ui,
-    -apple-system,
-    Arial,
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--ink);
   background: var(--white);
   line-height: 1.65;
@@ -73,7 +67,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: var(--ink);
@@ -115,7 +109,7 @@ h4 {
   gap: 8px;
   padding: 12px 24px;
   border-radius: var(--radius-md);
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
   transition: var(--transition);
@@ -210,7 +204,7 @@ button:focus-visible {
 }
 .header__logo img {
   display: block;
-  max-height: 52px;
+  max-height: 70px;
   width: auto;
 }
 .logo-digi {
@@ -255,7 +249,7 @@ button:focus-visible {
   border-radius: var(--radius-sm);
   background: var(--white);
   color: var(--navy);
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -462,7 +456,7 @@ button:focus-visible {
   flex: 1;
 }
 .stat__number {
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
   color: var(--navy);
@@ -470,7 +464,7 @@ button:focus-visible {
 }
 .stat__plus,
 .stat__percent {
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--green);
@@ -507,7 +501,7 @@ button:focus-visible {
   margin-bottom: 20px;
 }
 .growth-card__title {
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -551,7 +545,7 @@ button:focus-visible {
   align-items: center;
 }
 .growth-metric__val {
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   font-weight: 800;
   color: var(--navy);
@@ -618,7 +612,7 @@ button:focus-visible {
   min-width: 140px;
 }
 .trust-stat__number {
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.2rem;
   font-weight: 800;
   color: var(--white);
@@ -784,7 +778,7 @@ button:focus-visible {
   border-radius: 50%;
   background: var(--green);
   color: var(--white);
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
   display: flex;
@@ -979,7 +973,7 @@ button:focus-visible {
   border-radius: 50%;
   background: linear-gradient(135deg, var(--navy), var(--green));
   color: white;
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 0.95rem;
   display: flex;
@@ -1155,7 +1149,7 @@ button:focus-visible {
   border-radius: 50%;
   background: var(--navy);
   color: var(--white);
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
   display: flex;
@@ -1406,11 +1400,11 @@ button:focus-visible {
   padding-bottom: 56px;
 }
 .footer__logo {
-  font-family: "Sora", Arial, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
   display: inline-block;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 .footer__tagline {
   font-style: italic;
@@ -1446,7 +1440,7 @@ button:focus-visible {
   transform: translateY(-2px);
 }
 .footer__nav-title {
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--white);
@@ -1653,7 +1647,7 @@ button:focus-visible {
   margin: 18px 0 20px;
 }
 .not-found__message {
-  font-family: "Sora", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(1.35rem, 3vw, 2rem);
   font-weight: 700;
   color: var(--ink);
