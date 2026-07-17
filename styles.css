@@ -29,6 +29,7 @@
 html {
   scroll-behavior: auto;
   font-size: 16px;
+  overflow-x: hidden;
 }
 #home,
 #services,
@@ -269,7 +270,7 @@ button:focus-visible {
   flex-direction: column;
   gap: 5px;
   padding: 8px;
-  margin-left: auto;
+  margin-left: 12px;
 }
 .hamburger span {
   display: block;
@@ -296,11 +297,11 @@ button:focus-visible {
   border-top: 1px solid var(--border);
   box-shadow: var(--shadow-md);
   position: fixed;
-  top: 60px;
+  top: var(--header-h);
   left: 0;
   right: 0;
   z-index: 998;
-  max-height: calc(100vh - 60px);
+  max-height: calc(100vh - var(--header-h));
   overflow-y: auto;
   transform: translateY(-10px);
   opacity: 0;
@@ -1433,6 +1434,10 @@ button:focus-visible {
   display: inline-block;
   margin-bottom: 10px;
 }
+.footer__logo img {
+  max-width: 150px;
+  height: auto;
+}
 .footer__tagline {
   font-style: italic;
   color: rgba(255, 255, 255, 0.5);
@@ -1792,7 +1797,7 @@ button:focus-visible {
   }
   .hamburger {
     display: flex;
-    margin-left: 0;
+    margin-left: 12px;
   }
   .trust-banner__inner {
     flex-direction: column;
