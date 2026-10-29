@@ -43,7 +43,7 @@
   var fadeEls = document.querySelectorAll(".fade-in");
 
   // Stagger cards
-  [".services__grid", ".portfolio__grid", ".testimonials__grid"].forEach(
+  [".services__grid", ".portfolio__grid"].forEach(
     function (sel) {
       var grid = document.querySelector(sel);
       if (!grid) return;

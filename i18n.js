@@ -29,10 +29,8 @@
       "nav.method": "Méthode",
       "nav.work": "Réalisations",
       "nav.team": "Équipe",
-      "nav.testimonials": "Avis",
       "nav.contact": "Contact",
       "nav.footerMethod": "Notre méthode",
-      "nav.footerTestimonials": "Témoignages",
       "cta.quote": "Demander un devis",
       "cta.start": "Démarrer un projet",
       "cta.work": "Voir nos réalisations",
@@ -122,19 +120,6 @@
       "work.digitech.title": "Le site que vous consultez",
       "work.digitech.desc":
         "Site vitrine responsive réalisé pour DIGITECH, avec formulaire de contact fonctionnel, traduction FR/EN, optimisation SEO de base et déploiement sur Netlify.",
-      "testimonials.tag": "Ce que disent nos clients",
-      "testimonials.title": "Témoignages clients",
-      "testimonials.subtitle":
-        "La satisfaction de nos clients est notre meilleure récompense.",
-      "testimonials.quote1":
-        '"DIGITECH nous a accompagnés dans la refonte de notre image digitale. Leur approche méthodique et leur réactivité ont été des atouts majeurs pour notre projet."',
-      "testimonials.role1": "Directrice Générale, Maison Carvalho",
-      "testimonials.quote2":
-        "\"L'équipe de DIGITECH a su comprendre nos besoins et proposer une solution technique adaptée. Leur professionnalisme nous a convaincus.\"",
-      "testimonials.role2": "Fondateur, LogiPro Solutions",
-      "testimonials.quote3":
-        '"Grâce à DIGITECH, nous avons clarifié notre stratégie de communication digitale. Leur expertise en marketing et leur créativité ont été précieuses."',
-      "testimonials.role3": "Responsable Marketing, TechRetail",
       "final.title": "Prêt à digitaliser votre entreprise ?",
       "final.subtitle":
         "Parlons de votre projet dès aujourd'hui. Premier échange gratuit et sans engagement.",
@@ -281,10 +266,8 @@
       "nav.method": "Method",
       "nav.work": "Work",
       "nav.team": "Team",
-      "nav.testimonials": "Reviews",
       "nav.contact": "Contact",
       "nav.footerMethod": "Our method",
-      "nav.footerTestimonials": "Testimonials",
       "cta.quote": "Request a quote",
       "cta.start": "Start a project",
       "cta.work": "View our work",
@@ -374,18 +357,6 @@
       "work.digitech.title": "The website you are viewing",
       "work.digitech.desc":
         "A responsive showcase website built for DIGITECH, with a working contact form, FR/EN translation, basic SEO optimization and deployment on Netlify.",
-      "testimonials.tag": "What our clients say",
-      "testimonials.title": "Client testimonials",
-      "testimonials.subtitle": "Client satisfaction is our best reward.",
-      "testimonials.quote1":
-        '"DIGITECH supported us in redesigning our digital image. Their structured approach and responsiveness were major assets for our project."',
-      "testimonials.role1": "Chief Executive Officer, Maison Carvalho",
-      "testimonials.quote2":
-        '"The DIGITECH team understood our needs and proposed the right technical solution. Their professionalism convinced us."',
-      "testimonials.role2": "Founder, LogiPro Solutions",
-      "testimonials.quote3":
-        '"Thanks to DIGITECH, we clarified our digital communication strategy. Their marketing expertise and creativity were invaluable."',
-      "testimonials.role3": "Marketing Manager, TechRetail",
       "final.title": "Ready to digitalize your business?",
       "final.subtitle":
         "Let's talk about your project today. First consultation free and with no commitment.",
@@ -522,8 +493,6 @@
     { selector: '.footer__nav-col a[href$="#methode"]', key: "nav.footerMethod" },
     { selector: 'a.nav__link[href$="#realisations"], .footer__nav-col a[href$="#realisations"]', key: "nav.work" },
     { selector: 'a.nav__link[href$="equipe.html"], a.nav__link[href="equipe.html"]', key: "nav.team" },
-    { selector: 'a.nav__link[href$="#avis"]', key: "nav.testimonials" },
-    { selector: '.footer__nav-col a[href$="#avis"]', key: "nav.footerTestimonials" },
     { selector: 'a.nav__link[href$="#contact"]', key: "nav.contact" },
     { selector: ".header__cta, .mobile-menu__cta", key: "cta.quote" },
     { selector: ".legal-header .btn", key: "nav.contact" },
@@ -617,15 +586,6 @@
     { selector: ".portfolio-card:nth-child(1) img", key: "alt.digitech", attr: "alt" },
     { selector: ".portfolio-card:nth-child(1) .portfolio-card__title", key: "work.digitech.title" },
     { selector: ".portfolio-card:nth-child(1) .portfolio-card__desc", key: "work.digitech.desc" },
-    { selector: "#avis .section__tag", key: "testimonials.tag" },
-    { selector: "#avis .section__title", key: "testimonials.title" },
-    { selector: "#avis .section__subtitle", key: "testimonials.subtitle" },
-    { selector: ".testimonial-card:nth-child(1) .testimonial-card__quote", key: "testimonials.quote1" },
-    { selector: ".testimonial-card:nth-child(1) .testimonial-card__role", key: "testimonials.role1" },
-    { selector: ".testimonial-card:nth-child(2) .testimonial-card__quote", key: "testimonials.quote2" },
-    { selector: ".testimonial-card:nth-child(2) .testimonial-card__role", key: "testimonials.role2" },
-    { selector: ".testimonial-card:nth-child(3) .testimonial-card__quote", key: "testimonials.quote3" },
-    { selector: ".testimonial-card:nth-child(3) .testimonial-card__role", key: "testimonials.role3" },
     { selector: ".cta-section__title", key: "final.title" },
     { selector: ".cta-section__subtitle", key: "final.subtitle" },
     { selector: "#cta-final", key: "cta.appointment", textNode: true },
