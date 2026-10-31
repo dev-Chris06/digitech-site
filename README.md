@@ -2,7 +2,7 @@
 
 > **Projet fictif.** Ce site a été réalisé dans le cadre d'un projet tutoré. Le principe : fonctionner comme une vraie agence, DIGITECH, et répondre au besoin d'un client. L'agence, ses coordonnées et ses réseaux sociaux ont été créés pour l'exercice.
 >
-> **Mon rôle :** responsable technique de l'agence. J'ai conçu et développé seul l'intégralité du site, de la structure des pages à la mise en ligne.
+> **Mon rôle :** responsable technique de l'agence. J'ai conçu et développé le site, de la structure des pages à la mise en ligne.
 
 Site vitrine statique de DIGITECH, agence spécialisée dans la digitalisation des entreprises.
 
